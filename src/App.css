@@ -53,6 +53,7 @@ body {
 }
 
 .App-title.text {
+  display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
 }
