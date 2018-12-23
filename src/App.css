@@ -1,32 +1,75 @@
-.App {
-  text-align: center;
-}
+body {
+  font-size: 14px;
+  padding: 10px;
+  position: relative;
+} 
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.App {
+  background-color: #fff;
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width: 768px) {
+  .App-header {
+    font-size: 1em;
+    flex-wrap: wrap;
+  }
+}
+
+.App-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: calc(100vh - 20px - 30px);
+  text-align: center;
+  font-size: 2em;
+  color: #444;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title-container {
+  margin-bottom: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-title-container img {
+  width: 120px; 
+  height: 120px; 
+}
+
+.App-title {
+  font-size: 2em;
+  padding: 25px 25px;
+  border: 1px solid black;
+}
+
+.App-title.text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.App-title.text sub {
+  font-weight: 300;
+  font-size: .7em;
+}
+
+.App .weare-list {
+  padding: 0;
+  font-size: .7em;
+  list-style: none;
+}
+
+.frameworks-container img {
+  width: 90px;
+  height: 90px;
 }
